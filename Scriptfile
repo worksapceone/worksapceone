@@ -1,0 +1,5 @@
+@echo off
+echo "Downloading Worksapce one intelligent hub"
+powershell -command "Invoke-WebRequest https://packages.vmware.com/wsone/AirwatchAgent.msi -OutFile C:\AirwatchAgent.msi"
+echo "Installing Worksapce one intelligent hub"
+msiexec  /i "C:\AirwatchAgent.msi" /q ASSIGNTOGGEDINUSER=Y
